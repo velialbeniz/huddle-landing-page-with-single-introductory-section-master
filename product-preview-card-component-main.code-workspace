@@ -1,0 +1,13 @@
+{
+	"folders": [
+		{
+			"path": "../product-preview-card-component-main"
+		},
+		{
+			"path": "."
+		}
+	],
+	"settings": {
+		"liveServer.settings.multiRootWorkspaceName": "huddle-landing-page-with-single-introductory-section-master"
+	}
+}

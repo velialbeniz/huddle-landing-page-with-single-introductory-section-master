@@ -1,0 +1,159 @@
+:root {
+    --violet: hsl(257, 40%, 49%);
+    --soft-Magenta: hsl(300, 69%, 71%);
+
+    --ff-open: 'Open sans', sans-serif;
+    --ff-poppins: 'Poppins', sans-serif;
+
+    --fw-regular: 400;
+    --fw-bold: 600;
+
+
+}
+
+a {
+    text-decoration: none;
+}
+
+body {
+    background-image: url(./images/bg-mobile.svg);
+    background-repeat: no-repeat;
+    background-color: var(--violet);
+    background-size: cover;
+    color: #fff;
+    font-family: var(--ff-open);
+    max-width: 80%;
+    margin: 0 auto;
+    max-height: 100vh;
+}
+
+header {
+    height: 20vh;
+    top: 0;
+    left: 0;
+    display: flex;
+    align-items: center;
+}
+
+header img {
+    width: 150px;
+}
+
+h1 {
+    font-size: 1.5rem;
+    font-weight: var(--fw-bold);
+    line-height: 1.5;
+}
+
+.wrap {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+}
+
+.wrap h1 {
+    font-family: var(--ff-poppins);
+}
+
+.wrap p {
+    font-weight: var(--fw-regular);
+}
+
+.btn-register {
+    width: 200px;
+    padding: 10px 30px;
+    border-radius: 30px;
+    background-color: var(--white);
+    font-family: 'Poppins', sans-serif;
+    color: var(--violet);
+    font-size: 12px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin-bottom: 30px;
+    background-color: #fff;
+    transition: all .3s ease;
+}
+
+.btn-register:hover {
+    background-color: var(--soft-Magenta);
+    color: #fff;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+}
+
+footer a {
+    margin: 0 0 3rem 0;
+}
+
+footer i {
+    color: #fff;
+    border: 1px solid #fff;
+    padding: .5rem;
+    border-radius: 50%;
+    font-size: .875rem;
+    transition: all .9 ease;
+    opacity: 90%;
+}
+
+footer i:hover {
+    color: var(--soft-Magenta) !important;
+    border-color: var(--soft-Magenta);
+}
+
+@media screen and (min-width: 768px) {
+    body {
+        background-image: url(./images/bg-desktop.svg);
+        background-repeat: no-repeat;
+        background-size: cover;
+        background-position: center center;
+        width: 100%;
+        height: 100vh;
+
+    }
+
+    .wrap {
+        justify-content: start;
+        align-items: start;
+        margin-left: 2rem;
+    }
+
+    .wrap p {
+        text-align: start;
+        font-size: 1.25rem;
+        opacity: 80%;
+    }
+    
+    .wrap h1 {
+        font-size: 2.5rem;
+        text-align: start;
+    }
+
+    footer {
+        justify-content: end;
+    }
+
+    header img {
+        width: 200px;
+    }
+
+    footer i {
+        font-size: 1.25rem;
+    }
+
+    .btn-register {
+        width: 200px;
+        padding: 15px 30px;
+        font-size: 1rem;
+    }
+
+
+    
+
+}
